@@ -1,0 +1,275 @@
+/* cssreset */
+*{
+	margin:0;
+	padding:0;
+}
+
+/*css variables*/
+:root{
+	--navbar-height:59px;
+}
+
+/*navigton bar*/
+#navbar{
+	display:flex;
+	align-items: center;
+}
+/*NAVIGTION BAR LOGO ANF=D PNG*/
+
+#navbar::before{
+	content: "";
+	background-color:black;
+	position: absolute;
+	top:0px;
+	left:0px;
+	height:100%;
+	width:100%;
+	z-index: -1;
+	opacity: 0.3;
+}
+#logo{
+        height:17px;
+        margin: 20px 25px;
+}
+#logo img{
+	height:50px;
+    margin: -18px -20px;
+    }
+
+#logo img:hover{
+	content: "";
+    background-color: lightgoldenrodyellow;
+    border-radius: 50px;
+}
+
+
+#navbar{
+	position:absolute;
+	z-index: 1;
+	display:flex;
+	width:100%;
+
+}
+#navbar ul{
+	display: flex;
+	font-family: 'Patrick Hand', cursive;
+}
+#navbar ul li{
+	list-style: none;
+	font-size: 1.3rem;
+}
+#navbar ul li a{
+	color:white;
+	display: block;
+	padding: 3px 22px;
+	border-radius: 20px;
+	text-decoration: none;
+}
+#navbar ul li a:hover{
+	color:black;
+	background-color: white;
+
+}
+
+/*home section*/
+
+#home{
+	display: flex;
+	padding:3px 200px;
+	height:741px;
+	top:0px;
+	left:0px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-weight: bolder;
+	
+	/* -webkit-text-fill-color: black;
+	-webkit-text-stroke-width: 0.5px;
+	-webkit-text-stroke-color: white; */
+}
+
+#home:before{
+	content: "";
+	position: absolute;
+	background: url(images/back13.jpeg) no-repeat center center/cover;
+	height: 100%;
+	width: 100%;
+	top:-5px;
+	left:0px;
+	z-index: -1;
+	opacity:1;
+	filter: contrast(100%);
+	image-rendering: auto;
+	image-rendering: crisp-edges;
+    image-rendering: pixelated;
+}
+#home h1{
+	color:white;
+	text-align:center;
+    font-family: 'Bree Serif', serif;
+}
+#home p{
+	color:white;
+	text-align:center;
+	font-size:1.9rem;
+font-family: 'Patrick Hand', cursive;
+
+
+
+}
+
+/*service section*/
+/*service section*/
+#services{
+	margin:3px;
+	display:flex;
+	 font-family: 'Bree Serif', serif;
+	 
+}
+#services-container::before{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 79%;
+    background: url(images/back6.jfif) no-repeat center center/cover;
+	opacity: 0.3;
+}
+
+
+#services .box{
+    border:4px solid brown;
+	border-radius:32px;
+	margin:12px 26px;
+	padding:15px;
+	
+
+}
+#services .box img:hover{
+	background-color:red;
+}
+#services .box img{
+	height:200px;
+	margin:auto;
+	display:block;
+}
+
+
+
+
+
+
+/*utility class*/
+.h-primary{
+	font-size:3.8rem;
+	padding:12px;
+	 font-family: 'Bree Serif', serif;
+}
+
+.h-secondary{
+	font-size:2.8rem;
+	font-family: 'Patrick Hand', cursive;
+	padding:12px;
+}
+
+.btn{
+	padding:12px 25px;
+	border:3px solid white;
+	background-color: brown;
+	color:white;
+	margin: 21px;
+    font-family: 'Bree Serif', serif;
+	font-size: 1.9rem;
+	border-radius: 40px;
+	cursor: pointer;
+	 
+}
+.btn:hover{
+	background-color:red;
+
+}
+.center{
+	text-align: center;
+}
+
+/*client section*/
+
+#client-section{
+	height:344px;
+
+
+}
+.client-items{
+	padding: 34px;
+
+}
+#client-section:before{
+	    content: "";
+    position: absolute;
+    background: url(images/back6flip.jfif)no-repeat center center/cover;
+    width: 100%;
+    height: 41%;
+    opacity: 0.3;
+    z-index: -1;
+
+}
+#clients{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#client-section h1{
+	font-size: 45px;
+	font-family:'Patrick Hand', cursive;
+}
+#clients img{
+	height: 110px;
+}
+
+/*contact section*/
+
+#contact{
+	position: relative;
+	top:-86px
+	
+}
+#contact::before{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 555px;
+	z-index: -1;
+	opacity: 0.7;
+	background: url(back6.jfif)no-repeat center center/cover;
+	opacity: 0.5;
+}
+#contact-box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 34px;
+}
+#contact-box form{
+	width: 50%;
+}
+#contact-box label{
+	font-size: 1.3rem;
+	 font-family: 'Bree Serif', serif;
+}
+#contact-box label .message{
+	font-size: 1.9rem;
+	 font-family: 'Bree Serif', serif;
+}
+#contact-box input,
+#contact-box textarea{
+	width:100%;
+	padding:0.5rem;
+	border-radius: 9px;
+	font-size: 1.1rem;
+}
+
+footer{
+	background: black;
+	color: white;
+	padding:9px;
+}

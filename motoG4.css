@@ -1,0 +1,37 @@
+#navbar ul li {
+    font-size: 0.7rem;
+}
+
+#home {
+   
+    height: 277px;
+    padding: 63px 20px;
+}
+
+
+.btn {
+    padding: 6px 5px;
+    font-size: 1.3rem;
+    top: -24px;
+    margin: 14px -1px;
+    position: relative;
+}
+#services-container:before {
+    height: 303%;
+    top: 334px;
+}
+#clients{
+    flex-wrap:wrap;
+}
+
+#clients img {
+    margin: -17px -40px;
+    width: 64px;
+    padding: 0px;
+    left: 0px;
+    height: auto;
+}
+
+#contact-box form{
+	width: 70%;
+}
